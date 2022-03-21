@@ -44,6 +44,7 @@ class Monitor():
     def read_config(self):
         self.config = configparser.ConfigParser()
         self.config.read(Monitor.CONFIG_FILE)
+        self.check_config()
         self.reboot_before_reset = self.config[Monitor.SYSTEM_CONFIG].getboolean(Monitor.CFG_REBOOT_BEFORE)
         self.reboot_after_reset = self.config[Monitor.SYSTEM_CONFIG].getboolean(Monitor.CFG_REBOOT_AFTER)
         self.max_delta = self.config[Monitor.SYSTEM_CONFIG].getint(Monitor.CFG_DELTA)
