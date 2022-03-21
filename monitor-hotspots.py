@@ -29,7 +29,7 @@ class Monitor():
 
     WAIT_AFTER_REBOOT = 180 # Seconds = 3 minutes
     WAIT_AFTER_RESET = 2100 # Seconds = 35 minutes
-    CHECK_INTERVAL = 300 # Seconds = 5 minutes
+    CHECK_INTERVAL = 420 # Seconds = 7 minutes
 
     config = None
     reboot_before_reset = False
