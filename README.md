@@ -32,7 +32,7 @@ This is driven from the settings.ini file
 
 | Property      | Description           | Default  |
 | ------------- |-------------| -----:|
-| max_delta     | The maximum number of blocks your hotspot can be behind the blockchain before a reset blocks occurs | 6 |
+| max_delta     | The maximum number of blocks your hotspot can be behind the blockchain before a reset blocks occurs | 5 |
 | reboot_before_reset | If set to 'yes', before performing a reset blocks, your hotspot will be rebooted.  A reset blocks will be scheduled to start 3 minutes after the reboot. | no |
 | reboot_after_reset | If set to 'yes', 35 minutes after performing a reset blocks, your hotspot will be rebooted | yes |
 
@@ -54,7 +54,7 @@ Say I had a hotspot called Antagonising Slow Doorstop, after noting the address 
 
 ```
 [System]
-max_delta = 6
+max_delta = 5
 reboot_before_reset = no
 reboot_after_reset = yes
 
